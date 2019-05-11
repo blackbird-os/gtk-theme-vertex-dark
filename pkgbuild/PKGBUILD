@@ -1,0 +1,15 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=gtk-theme-vertex-dark
+pkgver=2019.01
+pkgrel=1
+pkgdesc="FormaN aurorae theme for the plasma desktop"
+arch=('any')
+url='https://github.com/blackbird-os/gtk-theme-vertex-dark'
+license=('GPL')
+depends=('gtk-engine-murrine' 'gnome-themes-standard')
+package() {
+  cd ../..
+  cp -aR usr $pkgdir/
+}
